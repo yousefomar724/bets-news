@@ -45,6 +45,7 @@ export default function Avatar({
         <Image
           src={userImage}
           layout='fill'
+          loading='lazy'
           className={`rounded-full bg-black ${extraClass}`}
           alt={name}
         />

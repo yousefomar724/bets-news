@@ -33,16 +33,17 @@ export default function PostPreview({ post }) {
       key={key}
     >
       <div className='h-[350px] w-full cover relative post-preview__image'>
-        <Image
+        {/* <Image
           src={featured}
           alt={title}
           // layout='fill'
           width={300}
           height={300}
+          loading='lazy'
           placeholder='blur'
           blurDataURL={featured}
           priority={true}
-        />
+        /> */}
         <Link href={`/${slug}`}>
           <a className='box-link absolute left-0 right-0 bottom-0 top-0 opacity-0 text-transparent'>
             {title}
@@ -74,13 +75,13 @@ export default function PostPreview({ post }) {
         <div className='md:flex lg:block xl:flex flex-row justify-between mt-1 items-center'>
           <div className='flex flex-row text-current'>
             {/* User Image */}
-            <Avatar
+            {/* <Avatar
               name={primary_author.name}
               picture={primary_author.profile_image}
               date={published_at}
               color='current'
               show_name='false'
-            />
+            /> */}
           </div>
           <div className='text-base font-thin'>
             {reading_time} em minutos de leitura

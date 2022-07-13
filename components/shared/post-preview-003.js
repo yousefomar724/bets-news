@@ -28,16 +28,17 @@ export default function PostPreview({ post }) {
       key={key}
     >
       <div className='h-[280px] w-full cover relative post-preview__image'>
-        <Image
+        {/* <Image
           src={featured}
           alt={title}
           // layout='fill'
           width={300}
           height={300}
+          loading='lazy'
           priority={true}
           placeholder='blur'
           blurDataURL={featured}
-        />
+        /> */}
         <Link href={`/${slug}`}>
           <a className='box-link absolute left-0 right-0 bottom-0 top-0 opacity-0 text-transparent'>
             {title}
