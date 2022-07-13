@@ -36,12 +36,12 @@ export default function PostBody({ content, settings, title, post }) {
             <Link href={item.href} key={item.name + item.id}>
               <a className='flex items-center text-lg font-normal mb-2'>
                 <div className='w-[30px] mr-2.5'>
-                  <Image
+                  {/* <Image
                     src={item.icon}
                     alt={item.icon}
                     width={25}
                     height={25}
-                  />
+                  /> */}
                 </div>
 
                 {item.name}
